@@ -1,13 +1,185 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: "../background_img.jpg";
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h2 {
+  justify-content: center;
+  display: flex;
+  width: 700px;
+}
+
+.mainContainer {
+  display: flex;
+  position: relative;
+}
+
+header {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: center;
+  padding: 30px;
+  border-bottom: 5px solid green;
+  background-color: rgb(67, 93, 29);
+}
+
+.imageContainer {
+  border: 5px solid green;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 10px 0;
+  padding: 20px;
+  background-color: rgb(203, 198, 198);
+  width: 700px;
+}
+
+.clickable-square {
+  border: solid green;
+  border-radius: 15px;
+}
+
+.clickable-square:hover {
+  background-color: rgb(188, 181, 181);
+  cursor: pointer;
+}
+
+.avatarContainer {
+  display: flex;
+}
+
+.avatar-image {
+  position: relative;
+  flex-direction: column;
+}
+
+.bodyImage {
+  position: absolute;
+  position: fixed;
+  z-index: 1;
+  height: 300px;
+  width: 300px;
+  margin-top: 400px;
+  margin-left: 200px;
+}
+
+.eyeImage {
+  position: absolute;
+  position: fixed;
+  z-index: 2;
+  height: 300px;
+  width: 300px;
+  margin-top: 400px;
+  margin-left: 200px;
+}
+
+.hairImage {
+  position: absolute;
+  position: fixed;
+  z-index: 3;
+  height: 300px;
+  width: 300px;
+  margin-top: 400px;
+  margin-left: 200px;
+}
+
+.mouthImage {
+  position: absolute;
+  position: fixed;
+  z-index: 4;
+  height: 300px;
+  width: 300px;
+  margin-top: 400px;
+  margin-left: 200px;
+}
+
+.eyebrowsImage {
+  position: absolute;
+  position: fixed;
+  z-index: 5;
+  height: 300px;
+  width: 300px;
+  margin-top: 400px;
+  margin-left: 200px;
+}
+
+.glassesImage {
+  position: absolute;
+  position: fixed;
+  z-index: 6;
+  height: 300px;
+  width: 300px;
+  margin-top: 400px;
+  margin-left: 200px;
+}
+
+.clothingL1Image {
+  position: absolute;
+  position: fixed;
+  z-index: 7;
+  height: 300px;
+  width: 300px;
+  margin-top: 400px;
+  margin-left: 200px;
+}
+
+.clothingL2Image {
+  position: absolute;
+  position: fixed;
+  z-index: 8;
+  height: 300px;
+  width: 300px;
+  margin-top: 400px;
+  margin-left: 200px;
+}
+
+.clothingL3Image {
+  position: absolute;
+  position: fixed;
+  z-index: 9;
+  height: 300px;
+  width: 300px;
+  margin-top: 400px;
+  margin-left: 200px;
+}
+
+.selectorContainer {
+  width: 50%;
+  margin-left: 50%;
+
+  margin-top: 10px;
+  margin-right: 50px;
+}
+
+.randomBtn {
+  width: 150px;
+  height: 60px;
+  position: absolute;
+  position: fixed;
+  margin-top: 750px;
+  margin-left: 280px;
+  border-radius: 15px;
+  background-color: rgb(67, 93, 29);
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.active {
+  background-color: lightseagreen;
 }
